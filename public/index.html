@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Interactive Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Fun Interactive Page!</h1>
+        <div id="ipAddress" class="ip-address">Loading IP Address...</div>
+    </header>
+    <main>
+        <section class="content">
+            <button id="changeColorBtn">Change Background Color</button>
+            <button id="showMessageBtn">Show a Surprise Message</button>
+            <button id="changeTextColorBtn">Change Text Color</button>
+            <button id="getJokeBtn">Get a Random Joke</button>
+            <div id="message" class="hidden">🎉 Surprise! You've found the secret message! 🎉</div>
+            <div id="joke" class="hidden">Joke will appear here...</div>
+
+            <!-- Game Section -->
+            <div class="game">
+                <h2>Guess the Number Game</h2>
+                <p>Guess a number between 1 and 100</p>
+                <input type="number" id="guessInput" placeholder="Enter your guess">
+                <button id="guessBtn">Guess</button>
+                <div id="gameMessage"></div>
+            </div>
+        </section>
+        <canvas id="canvas"></canvas>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fun Interactive Page. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
